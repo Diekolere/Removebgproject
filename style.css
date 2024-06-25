@@ -1,0 +1,152 @@
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav {
+ background-color: beige;
+ color: black;
+ height: 60px;
+ position:sticky;
+display: flex;
+justify-content: space-between;
+flex-direction:column;
+}
+
+.nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+
+.nav a:hover {
+    color: grey;
+
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin-left: 40px;
+        max-width: 100%;
+}
+
+.nav ul li{
+    margin-left: 20px;
+    color: yellow;
+    flex-direction: column;
+}
+
+.main video{
+    border-radius: 10px;
+}
+
+button {
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:#00007bff ;
+   /* padding: 10px 20px;*/
+    width:150px;
+    height: 47px;
+}
+
+.upload {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Video-container {
+    margin-right: 50px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: 50px 20px;
+    background-color: #f8f9fa;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+}
+
+.stun {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.people {
+   list-style-type: none;
+   margin-left: 5px;
+   margin-right: 10px;
+   justify-content: center; 
+}
+
+.btn {
+     color:paleturquoise;
+     color: #fff;
+     border: none;
+     font-size: 16px;
+     border-radius: 15px;
+     cursor: pointer;
+     background-color:paleturquoise ;
+    /* padding: 10px 20px;*/
+     width:100px;
+     height: 40px;
+     text-align: center;
+     margin: auto;
+     padding: 5px;
+}
+
+.box{
+   
+   margin-left: 450px;
+   flex-direction: column;
+}
