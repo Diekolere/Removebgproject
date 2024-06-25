@@ -1,5 +1,4 @@
 * {
-    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,66 +8,53 @@ body {
     background-color: #fff;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:16px;
-    
+    font-size: 16px;
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 30px;
-
 }
 
-ul{
+ul {
     list-style-type: none;
-}
-
-.nav {
- background-color: beige;
- color: black;
- height: 60px;
- position:sticky;
-display: flex;
-justify-content: space-between;
-flex-direction:column;
-}
-
-.nav a{
-    text-decoration: none;
-    color:black;
-    font-size: 15px;
-    font-weight: normal;
-}
-
-
-
-.nav a:hover {
-    color: grey;
-
-}
-
-.nav ul{
-    display: flex;
     flex-direction: row;
 }
 
-.nav .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        margin-left: 40px;
-        max-width: 100%;
+.nav {
+    background-color: white;
+    color: black;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 0 20px;*/
 }
 
-.nav ul li{
-    margin-left: 20px;
-    color: yellow;
-    flex-direction: column;
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
 
-.main video{
+.nav a:hover {
+    color: burlywood;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.main video {
     border-radius: 10px;
 }
 
@@ -78,10 +64,13 @@ button {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-    background-color:#00007bff ;
-   /* padding: 10px 20px;*/
-    width:150px;
+    background-color: #00007b;
+    width: 150px;
     height: 47px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .upload {
@@ -98,55 +87,77 @@ button {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.Video-container {
-    margin-right: 50px;
-}
-
 .main {
     display: flex;
     justify-content: space-evenly;
-    align-items: 50px 20px;
+    align-items: center;
+    padding: 50px 20px;
     background-color: #f8f9fa;
-    flex-direction: row;
-    /*border: 1px solid black;*/
 }
 
 .stun {
     display: flex;
-    text-decoration: none;
+    justify-content: center;
     text-align: center;
     color: black;
     font-size: 25px;
     margin: auto;
-    justify-content: center;
-
 }
 
-.people {
-   list-style-type: none;
-   margin-left: 5px;
-   margin-right: 10px;
-   justify-content: center; 
+.stun .baby ul {
+    display: flex;
+    gap: 10px;
 }
 
-.btn {
-     color:paleturquoise;
-     color: #fff;
-     border: none;
-     font-size: 16px;
-     border-radius: 15px;
-     cursor: pointer;
-     background-color:paleturquoise ;
-    /* padding: 10px 20px;*/
-     width:100px;
-     height: 40px;
-     text-align: center;
-     margin: auto;
-     padding: 5px;
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .upload {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.btn{
+    color: #000;
+    border: none;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: paleturquoise;
+    width: 100px;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+    height: 40px;
+    
 }
 
 .box{
-   
-   margin-left: 450px;
-   flex-direction: column;
+    margin-left: 350px;
+}
+
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 40px;
+    max-width: 100%;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-left: 2px;
 }
